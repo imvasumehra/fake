@@ -1,0 +1,258 @@
+<html>
+    <head>
+      <title>Carnival</title>
+      <style media="screen">
+        body {
+          background-image: url("images/5.png");
+          background-size: cover;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: black;
+
+          color: white;
+        }
+        .h {
+          font-family: 'Monoton', cursive;
+          text-align: center;
+          color: yellow;
+          margin: 35px auto;
+          font-size: 50px;
+        }
+        .awesome {
+      color:#313131;
+      -webkit-animation:colorchange 3s infinite alternate;
+
+
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+
+        color: red;
+      }
+
+      10% {
+
+        color: #8e44ad;
+      }
+
+      20% {
+
+        color: #1abc9c;
+      }
+
+      30% {
+
+        color: #d35400;
+      }
+
+      40% {
+
+        color: yellow;
+      }
+
+      50% {
+
+        color: #34495e;
+      }
+
+      60% {
+
+        color: orange;
+      }
+
+      70% {
+
+        color: #2980b9;
+      }
+      80% {
+
+        color: #f1c40f;
+      }
+
+      90% {
+
+        color: #2980b9;
+      }
+
+      100% {
+
+        color: pink;
+      }
+    }
+    .e {
+      margin: auto;
+      height: 700px;
+      width: 700px;
+    }
+    .mySlides {
+      display: none;
+      margin:  30px auto;
+      opacity: 100%;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .l {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    textarea {
+  width: 50%;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  display: block;
+}
+.nav_button{
+  height: 50px;
+  width: 10%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  display: block;
+}
+input[type=text], select {
+width: 100%;
+padding: 20px 40px;
+margin: auto;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size:20px;
+height:75px;
+}
+
+input[type=submit] {
+width: 100%;
+background: rgba(204, 204, 204, 0);
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 20px;
+}
+
+input[type=submit]:hover {
+
+}
+::-webkit-input-placeholder {
+
+font-size: 20px;
+}
+::-moz-placeholder {
+
+font-size: 20px;
+}
+:-ms-input-placeholder {
+
+font-size: 20px;
+}
+::placeholder {
+
+font-size: 20px;
+}
+.g {
+  width: 100%;
+  height: auto;
+  font-family: 'Ubuntu';
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+.q {
+  font-family: 'Ubuntu';
+  font-size: 25px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+
+}
+      </style>
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+      <div class="h">
+        <h1 class="awesome">Mittal Saab's Birthday Bash</h1>
+      </div>
+      <div class="q">
+        <p>So the day we all have been waiting for is finally here. The grandest carnival of every year.<br></p>
+        <p> The festival which recharges one and all from their miserable lives, and gives a reason to cherish things.
+        So we on the behalf of planet Earth give a mini tribute to the most charismatic personality to have ever walked the face of this planet. And yeah, the background speaks volumes about him. Haha!</p>
+
+      </div>
+      <div class="e">
+        <img class="mySlides" src="images/1.jpg">
+        <img class="mySlides" src="images/2.jpg">
+        <img class="mySlides" src="images/6.jpg">
+        <img class="mySlides" src="images/7.jpg">
+        <img class="mySlides" src="images/8.jpg">
+        <img class="mySlides" src="images/9.jpg">
+        <img class="mySlides" src="images/10.jpg">
+        <img class="mySlides" src="images/11.jpg">
+        <img class="mySlides" src="images/12.png">
+        <img class="mySlides" src="images/13.jpg">
+        <img class="mySlides" src="images/14.jpg">
+        <img class="mySlides" src="images/15.jpg">
+        <img class="mySlides" src="images/16.png">
+        <img class="mySlides" src="images/17.jpg">
+        <img class="mySlides" src="images/18.jpg">
+      </div>
+      <script type="text/javascript">
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+      <div class="q">
+        <p>And we give a chance to you to wish him on this auspicious day. Send your messages and get them posted right here on this page.</p>
+
+      </div>
+
+      <form action="addPost" method="POST">
+
+  <h2><input type="text" id="fname" name="body" placeholder="YOUR THOUGHTS!! YOUR BIRTHDAY WISHES!! LOL! DON'T FORGET TO PUT YOUR NAME!"></h2>
+
+
+
+  <input type="submit" value="POST IT!!">
+
+
+
+        <% for(let i = 23; i < posts.length; i++) { %>
+            <article>
+              <div class="g">
+                <p><%= i-22%>. <%= posts[i].body %></p>
+                <hr>
+              </div>
+
+            </article>
+        <% } %>
+
+    </body>
+</html>
